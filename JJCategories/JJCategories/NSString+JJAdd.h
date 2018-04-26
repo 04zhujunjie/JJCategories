@@ -25,6 +25,36 @@
 /**
  去空格
  */
-@property (nonatomic,readonly,copy) NSString *removeSpace;
+- (void)jj_removeSpace;
+
+/**
+ 是否是有效手机号码
+ */
+- (BOOL)jj_isCellPhoneNumber;
+
+/**
+ 判断是否是全数字
+ */
+- (BOOL)jj_isAllNum;
+
+/**
+ 判断是否邮箱
+ 
+ */
+- (BOOL)jj_isEmail;
+
+/**
+ 判断是否全汉字
+ */
+- (BOOL)jj_isChinese;
+/**
+ 判断是否全字母
+ */
+- (BOOL)jj_isLetter;
+
+/**
+ 判断是否是数字或字母
+ */
+- (BOOL)jj_isLetterOrNum;
 
 @end
